@@ -2,20 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+}
+
+html {
+	position: relative;
+	height: 100%;
+	margin: 0;
+}
+
+html::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+	opacity: 0.4;
+	z-index: -1;
+}
+
 @layer components {
-  .form-field-block{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 8px;
-    gap: 2px
-  }
-  .form-field {
-    padding: 4px 8px 4px 8px;
-    border: 1px solid slategrey;
-    border-radius: 4px;
-  }
-  .field-name {
-    font-size: 18px;
-    font-weight: 500;
-  }
+	.form-field-block {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 8px;
+		gap: 2px;
+	}
+	.form-field {
+		padding: 4px 8px 4px 8px;
+		border: 1px solid slategrey;
+		border-radius: 4px;
+	}
+	.field-name {
+		font-size: 18px;
+		font-weight: 500;
+	}
 }
