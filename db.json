@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "imageUrl": "./src/assets/product.webp",
+      "name": "Product name 1",
+      "count": 10,
+      "size": {
+        "width": 261,
+        "height": 219
+      },
+      "weight": "126g",
+      "comments": [
+        {
+          "id": 1,
+          "productId": 1,
+          "description": "Really cool",
+          "date": "12.06.2021, 07:08"
+        }
+      ]
+    }
+  ]
+}

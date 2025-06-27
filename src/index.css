@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-field-block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    gap: 2px
+  }
+  .form-field {
+    padding: 4px 8px 4px 8px;
+    border: 1px solid slategrey;
+    border-radius: 4px;
+  }
+  .field-name {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
